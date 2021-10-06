@@ -19,8 +19,7 @@ function submitData(userName, userEmail) {
             return response.json()
         })
         .then(function (object) {
-            // document.body.innerHTML = object["id"]
-            console.log(object)
+            document.body.innerHTML = object["id"]
         })
         .catch(function (error) {
             document.body.innerHTML = error.message
